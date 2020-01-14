@@ -1,0 +1,88 @@
+/*basic*/
+* {margin: 0; padding: 0;}
+body {overflow-x: hidden;}
+@-ms-viewport {width: device-width;}
+.section {width: 100%;}
+.section:after {content:''; display: block; clear: both;}
+/*header*/
+.menu {background-color: rgba(0,0,0,0.7); width: 100%; position: fixed;}
+.menu:after {content: ''; display: block; clear:both;}
+.menu li {float: left; margin: 12pt 1rem; list-style-type: none; color: white; font-size: 12pt;}
+.menu li:first-child {font-size: 18pt; margin-top: 6pt; font-weight: bold; margin-left: 4%;}
+.menu:hover {cursor: pointer;}
+@media screen and (max-width:1280px) {
+}
+@media screen and (max-width:736px) {
+  .menu li:nth-child(n+2) {display: none;}
+}
+@media screen and (max-width:480px) {
+  .menu {background-color: rgba(0,0,0);}
+  .menu li:first-child {display: block;}
+}
+/*home*/
+#home {width: 100%; height: 100vh; background-image: url('home.jpg'); background-repeat: no-repeat;
+background-position: center; background-size: cover; text-align: center; background-attachment: fixed;}
+#home h1 {color: white; font-size: 40pt; padding-top: 44vh; letter-spacing: 0.1rem;}
+@media screen and (max-width:1280px) {
+  #home h1 {font-size: 32pt;}
+}
+@media screen and (max-width:736px) {
+  #home h1 {font-size: 26pt;}
+}
+@media screen and (max-width:480px) {
+  #home h1 {font-size: 20pt;}
+}
+/*about and dream*/
+#about, #dream {height: 40vh;}
+#about p, #dream p {font-weight: 600; color: #444444;}
+#about>div, #dream>div {width: 80%; margin: 16vh 10%;}
+#about div div, #dream div div {display: inline-block; vertical-align: middle;}
+#about #first div:first-child {width: 20%; border: 1px solid black; text-align: center; padding: 3.5rem 0;}
+#about #first div:nth-child(2) {width: 70%; margin-left: 5%; line-height: 18pt;}
+#about #first div:nth-child(2) h1, #dream #second div:nth-child(1) h1 {margin-bottom: 0.5rem;}
+#dream #second div:first-child {width: 70%; margin-right: 5%; line-height: 18pt;}
+#dream #second div:nth-child(2) {width: 20%; border: 1px solid black; text-align: center; padding: 3.5rem 0;}
+@media screen and (max-width:1280px) {
+  #dream #second div:nth-child(1) {width:100%;}
+  #dream #second div:nth-child(2) {display: none;}
+}
+@media screen and (max-width:736px) {
+  #about #first div:first-child {display: none;}
+  #about #first div:nth-child(2) {width:100%;}
+  #about>div, #dream>div {width: 90%; margin: 16vh 5%;}
+  #about, #dream {overflow: auto;}
+  #about p, #dream p {font-size: 10pt;}
+}
+@media screen and (max-width:480px) {
+}
+/*project*/
+#project {width: 100%;  background-color: #cccccc; padding-bottom: 0.5vh;}
+#project:after {content:''; display: block; clear: both;}
+#project .inner {width: 68%; margin: 10vh 16%; border: 1px solid black; height: 20rem; background-color: white;
+box-shadow: 2px 2px 2px 2px gray;}
+.inner div {display: inline-block;}
+#project>h1 {text-align: center; padding-top: 6vh;}
+#img1, #img2 {background-image: url('jbproject.png'); border: 1px solid black; width: 64%;
+height: 100%; background-repeat: no-repeat; background-position: center; background-size: cover; text-align: center;}
+#img2 {background-image: url('fantasia.png');}
+.des {width: 30%; height: 100%; vertical-align: top; padding: 0.5rem;}
+.des h1 {margin-bottom: 0.2rem;}
+.des p {font-weight: 600; color: #444444; line-height: 20pt;}
+@media screen and (max-width:1280px) {
+  #project p {font-size: 10pt; line-height: 18pt;}
+}
+@media screen and (max-width:736px) {
+  #project #img1, #project #img2 {width: 100%;}
+  #project .des {display: none;}
+}
+@media screen and (max-width:480px) {
+  .inner {height: 8vh;}
+}
+/*contact*/
+#contact {text-align: center; background-color: black; color: white; padding: 10vh;}
+@media screen and (max-width:1280px) {
+}
+@media screen and (max-width:736px) {
+}
+@media screen and (max-width:480px) {
+}
