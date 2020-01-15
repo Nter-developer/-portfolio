@@ -5,11 +5,12 @@ body {overflow-x: hidden;}
 .section {width: 100%;}
 .section:after {content:''; display: block; clear: both;}
 /*header*/
-.menu {background-color: rgba(0,0,0,0.7); width: 100%; position: fixed;}
-.menu:after {content: ''; display: block; clear:both;}
-.menu li {float: left; margin: 12pt 1rem; list-style-type: none; color: white; font-size: 12pt;}
-.menu li:first-child {font-size: 18pt; margin-top: 6pt; font-weight: bold; margin-left: 4%;}
-.menu:hover {cursor: pointer;}
+.menu {background-color: rgba(0,0,0,0.8); width: 100%; position: fixed;}
+.menu ul {text-align: right; width: 86%; margin: 8pt auto;}
+.menu ul:after {content: ''; display: block; clear: both;}
+.menu li {display: inline-block; margin: 0 1rem; list-style-type: none; color: white; font-size: 12pt; vertical-align: middle;}
+.menu li:first-child {float: left; font-size: 18pt; font-weight: bold;}
+.menu li:hover {cursor: pointer;}
 @media screen and (max-width:1280px) {
 }
 @media screen and (max-width:736px) {
@@ -33,7 +34,6 @@ background-position: center; background-size: cover; text-align: center; backgro
   #home h1 {font-size: 20pt;}
 }
 /*about and dream*/
-#about, #dream {height: 40vh;}
 #about p, #dream p {font-weight: 600; color: #444444;}
 #about>div, #dream>div {width: 80%; margin: 16vh 10%;}
 #about div div, #dream div div {display: inline-block; vertical-align: middle;}
@@ -50,7 +50,6 @@ background-position: center; background-size: cover; text-align: center; backgro
   #about #first div:first-child {display: none;}
   #about #first div:nth-child(2) {width:100%;}
   #about>div, #dream>div {width: 90%; margin: 16vh 5%;}
-  #about, #dream {overflow: auto;}
   #about p, #dream p {font-size: 10pt;}
 }
 @media screen and (max-width:480px) {
