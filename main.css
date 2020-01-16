@@ -5,20 +5,30 @@ body {overflow-x: hidden;}
 .section {width: 100%;}
 .section:after {content:''; display: block; clear: both;}
 /*header*/
-.menu {background-color: rgba(0,0,0,0.8); width: 100%; position: fixed;}
-.menu ul {text-align: right; width: 86%; margin: 8pt auto;}
+.menu {background-color: rgba(0,0,0,0.9); width: 100%; position: fixed;}
+.menu ul {text-align: right; width: 90%; margin: 8pt auto;}
 .menu ul:after {content: ''; display: block; clear: both;}
 .menu li {display: inline-block; margin: 0 1rem; list-style-type: none; color: white; font-size: 12pt; vertical-align: middle;}
 .menu li:first-child {float: left; font-size: 18pt; font-weight: bold;}
-.menu li:hover {cursor: pointer;}
+.menu li:hover, #bars:hover, .menu i:hover, #menu-bars li {cursor: pointer;}
+.menu i, #menu-bars li {display: none;}
+
 @media screen and (max-width:1280px) {
 }
 @media screen and (max-width:736px) {
+  .menu li {margin: 0 0.2rem;}
   .menu li:nth-child(n+2) {display: none;}
+  .menu i {color: white; display: inline-block; float: right;}
+  #menu-open {height: 100vh; position: fixed; width: 100%; display: none;}
+  #menu-bars {height: 100%; background-color: black; width: 30%; float: left; margin-left: -100%; z-index: 1;}
+  #menu-bars li {float: left; display: block; margin: 1rem 2rem; color: white; font-size: 18pt; list-style-type: none;}
+  #menu-bars li:first-child {margin-top: 20pt;}
+  #non-menu-bars {width: 100%; height: 100%; background-color: rgba(0,0,0,0.4);}
 }
 @media screen and (max-width:480px) {
   .menu {background-color: rgba(0,0,0);}
   .menu li:first-child {display: block;}
+  #menu-bars {width: 40%;}
 }
 /*home*/
 #home {width: 100%; height: 100vh; background-image: url('home.jpg'); background-repeat: no-repeat;
