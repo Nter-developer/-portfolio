@@ -19,6 +19,7 @@ $(document).ready(function() {
     var offset = $('#contact').offset();
     $('html').animate({scrollTop:offset.top},800);
   });
+
   $('#bars').click(function() {
     $('#menu-open').fadeIn(400);
     $('#menu-bars').css('display','block').animate({'margin-left':'0%'},400);
