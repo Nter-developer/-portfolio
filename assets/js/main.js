@@ -3,6 +3,8 @@ $(document).ready(function() {
     var target = "#"+$(this).attr("class").split(".");
     var scrollPosition = $(target).offset().top-54;
     $('html').animate({scrollTop:scrollPosition},800);
+    $('#menu-bars').animate({'margin-left':'-100%'},400);
+    $('#menu-open').fadeOut(400);
   });
 
   $('#bars').click(function() {
